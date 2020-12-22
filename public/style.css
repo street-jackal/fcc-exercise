@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --yellow: #98971a;
+  --purple: #8f3f71;
+  --black: #282828;
+  --green: #689d6a;
+  --tan: #f9f5d7;
+  --grey: #a89984;
+  --light-grey: #bdae93;
+  --orange: #d65d0e;
+  --blue: #076678;
+  --red: #9d0006;
+}
+
+body {
+  font-family:sans-serif;
+  margin: 25px;
+  color: #282828;
+  background: linear-gradient( 90deg, var(--tan) 30%, var(--red) 30%, var(--red) 35%, var(--blue) 35%, var(--blue) 45%, var(--tan) 45% );
+}
+
+h1 {
+  font-weight: bold;
+  
+}
+
+p {
+  max-width: 900px;
+}
+
+form {
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: #7c6f64;
+  display: inline-block;
+  width: 100%;
+  max-width: 340px;
+  border-radius: 5px;
+}
+
+input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+  background-color: #a89984;
+  border: 1px solid #282828;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+input[type=submit] {
+  font-size: 16px;
+  border-radius: 3px;
+  background-color: #d5c4a1;
+  border: 1px solid #282828;
+  box-shadow: 2px 2px #282828;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #9d0006;
+}
+
+code {
+  font-family: monospace;
+  font-size: 1.2em;
+  background-color: var(--green);
+  color: #fbf1c7;
+  padding: 2px;
+}
