@@ -119,7 +119,9 @@ app.get('/api/exercise/log', (request, response) => {
       }
 
       responseObject['count'] = result.log.length;
-      response.json(responseObject)
+      //response.json(responseObject);
+      myOutput = response.text(responseObject);
+      document.getElementById("jsonoutput").textContent = myOutput;
     }
   })
 })
