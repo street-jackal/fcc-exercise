@@ -117,7 +117,7 @@ app.get('/api/exercise/log', (request, response) => {
       if (request.query.limit) {
         responseObject.log = responseObject.log.slice(0, request.query.limit)
       }
-
+      
       responseObject['count'] = result.log.length;
       //response.json(responseObject);
       document.getElementById("jsonoutput").textContent = JSON.stringify(responseObject);
